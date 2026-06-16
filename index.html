@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae - Patel Vansh Kiritbhai</title>
+    <style>
+        /* Import a clean modern sans-serif font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 0; /* Full bleed layout handles page geometry safely via padding/margins on blocks */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #2c3e50;
+            background-color: #ffffff;
+            font-size: 10pt;
+            line-height: 1.5;
+            -webkit-print-color-adjust: exact;
+        }
+
+        /* Container using display: table to act perfectly as a 2-column structure in WeasyPrint */
+        .resume-container {
+            display: table;
+            width: 100%;
+            min-height: 297mm; /* Full A4 Height */
+        }
+
+        .resume-row {
+            display: table-row;
+        }
+
+        /* Left Sidebar: Light Blue/Slate Tint */
+        .sidebar {
+            display: table-cell;
+            width: 32%;
+            background-color: #f0f4f8;
+            padding: 25px 20px;
+            vertical-align: top;
+        }
+
+        /* Right Main Content */
+        .main-content {
+            display: table-cell;
+            width: 68%;
+            background-color: #ffffff;
+            padding: 30px 25px;
+            vertical-align: top;
+        }
+
+        /* Header Styling */
+        .header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            color: #1a365d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 11pt;
+            font-weight: 500;
+            color: #4a5568;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        /* Sections structure */
+        .section {
+            margin-bottom: 22px;
+            page-break-inside: avoid;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1a365d;
+            border-bottom: 1.5px solid #cbd5e0;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar .section-title {
+            color: #2b6cb0;
+            border-bottom: 1.5px solid #bee3f8;
+        }
+
+        /* Text formats */
+        p {
+            margin-bottom: 6px;
+            color: #4a5568;
+            text-align: justify;
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 16px;
+            margin-bottom: 8px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            color: #4a5568;
+        }
+
+        /* Contact Details */
+        .contact-item {
+            margin-bottom: 10px;
+            font-size: 9pt;
+            word-break: break-all;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #2b6cb0;
+            display: block;
+            font-size: 8.5pt;
+            text-transform: uppercase;
+        }
+
+        .contact-val a {
+            color: #4a5568;
+            text-decoration: none;
+        }
+
+        /* Block Info Entries */
+        .entry {
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+
+        .entry-header {
+            display: table;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+
+        .entry-title {
+            display: table-cell;
+            font-weight: 600;
+            font-size: 10.5pt;
+            color: #2d3748;
+            text-align: left;
+        }
+
+        .entry-date {
+            display: table-cell;
+            text-align: right;
+            font-size: 9.5pt;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 9.5pt;
+            margin-bottom: 5px;
+        }
+
+        /* Pill tags for skills */
+        .skill-group {
+            margin-bottom: 15px;
+        }
+        
+        .skill-group-title {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+
+        .tag-container {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #2d3748;
+            padding: 4px 9px;
+            border-radius: 4px;
+            font-size: 8.5pt;
+            margin-right: 5px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .sidebar-list-item {
+            font-size: 9.5pt;
+            margin-bottom: 5px;
+            color: #2d3748;
+            list-style-type: square;
+            margin-left: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="resume-row">
+        
+        <div class="sidebar">
+            
+            <div class="section">
+                <div class="section-title">Contact</div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">Mobile</span>
+                    <span class="contact-val">+91 9925276638</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-val"><a href="mailto:vanshkalariya2020@gmail.com">vanshkalariya2020@gmail.com</a></span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-val"><a href="https://www.linkedin.com/in/vanshpatel6638/" target="_blank">linkedin.com/in/vanshpatel6638</a></span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-val"><a href="https://github.com/vanshkalariya2020-del" target="_blank">github.com/vanshkalariya2020-del</a></span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-label">Address</span>
+                    <span class="contact-val">Patan, Gujarat, India</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Technical Skills</div>
+                
+                <div class="skill-group">
+                    <div class="skill-group-title">Testing & QA</div>
+                    <div class="tag-container">
+                        <span class="tag">Manual Testing</span>
+                        <span class="tag">Test Case Writing</span>
+                        <span class="tag">Bug Reporting</span>
+                        <span class="tag">SDLC</span>
+                        <span class="tag">STLC</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group-title">Databases & Tools</div>
+                    <div class="tag-container">
+                        <span class="tag">SQL</span>
+                        <span class="tag">MS Excel</span>
+                        <span class="tag">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Soft Skills</div>
+                <div class="tag-container" style="margin-top: 5px;">
+                    <span class="tag">Attention to Detail</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Team Collaboration</span>
+                    <span class="tag">Adaptability</span>
+                    <span class="tag">Time Management</span>
+                    <span class="tag">Quick Learner</span>
+                    <span class="tag">Communication</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Languages</div>
+                <ul>
+                    <li class="sidebar-list-item">English</li>
+                    <li class="sidebar-list-item">Hindi</li>
+                    <li class="sidebar-list-item">Gujarati</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            
+            <div class="header">
+                <h1>Patel Vansh Kiritbhai</h1>
+                <div class="subtitle">Computer Engineering Student & QA Intern</div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Career Objective</div>
+                <p>
+                    Motivated and detail-oriented Diploma Computer Engineering student seeking a Software Testing Internship opportunity to apply my knowledge of Manual Testing, SQL, and Software Development Life Cycle (SDLC) concepts. Passionate about Software Quality Assurance and eager to contribute to organizational success while continuously enhancing my technical and professional skills.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Research Interests</div>
+                <ul>
+                    <li>Software Quality Assurance (SQA)</li>
+                    <li>Test Automation Methodologies & Frameworks</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Education</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Diploma in Computer Engineering</div>
+                        <div class="entry-date">2024 — 2027 (Expected)</div>
+                    </div>
+                    <div class="entry-subtitle">Shree Swaminarayan Polytechnic, Sector-22, Gandhinagar</div>
+                    <p style="font-size: 9.5pt; color: #2d3748;">
+                        <strong>University:</strong> Gujarat Technological University (GTU) <br>
+                        <strong>Current Status:</strong> 5th Semester (Pursuing) &nbsp;|&nbsp; <strong>3rd Semester SPI:</strong> 9.14
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Work Experience</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Software Testing Intern</div>
+                        <div class="entry-date">15 Days</div>
+                    </div>
+                    <div class="entry-subtitle">Persist IT Services Pvt. Ltd., Sector-11, Gandhinagar</div>
+                    <ul>
+                        <li>Assisted in understanding enterprise software testing processes and quality assurance frameworks.</li>
+                        <li>Participated actively in software validation, application functionality testing, and defect logging.</li>
+                        <li>Gained comprehensive exposure to industry practices, Agile frameworks, and real-time environment sprints.</li>
+                        <li>Enhanced practical execution of testing methodologies, test standardizations, and core bug reporting flows.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Academic Projects</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <div class="entry-title">Air Quality Prediction System</div>
+                        <div class="entry-date">Core Developer / Tester</div>
+                    </div>
+                    <div class="entry-subtitle">Academic Research & Development Project</div>
+                    <p style="margin-bottom: 5px;">
+                        <em>Description:</em> Developed a responsive predictive system aimed at analyzing historical environmental data to forecast air quality indexes, trend insights, and atmospheric pollution levels to back eco-awareness initiatives.
+                    </p>
+                    <ul>
+                        <li>Collected, formatted, and meticulously analyzed structured project data requirements.</li>
+                        <li>Performed functional end-to-end testing, validation parameters, and system boundary verifications.</li>
+                        <li>Identified system exceptions/defects, logged test tracking entries, and verified cross-expected outcomes.</li>
+                        <li>Prepared clear test scenarios, tracked validation execution metrics, and documented structured observations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Courses & Certifications</div>
+                <div class="entry" style="margin-bottom: 0;">
+                    <div class="skill-group-title" style="margin-bottom: 3px;">Key Coursework Completed:</div>
+                    <p style="margin-bottom: 10px;">Software Testing, SQL Basics, Manual Testing, Cloud Computing, Modern Web & AI</p>
+                    
+                    <div class="skill-group-title" style="margin-bottom: 5px;">Professional Credentials:</div>
+                    <ul>
+                        <li><strong>C-DAC Certification</strong> — Center for Development of Advanced Computing (2026)</li>
+                        <li><strong>CCC</strong> (Course on Computer Concepts)</li>
+                        <li><strong>MIC Certification</strong> & <strong>CAP Certification</strong></li>
+                        <li><strong>Gemini AI Certification</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+"""
+
+# Save html content to file
+with open("Patel_Vansh_CV.html", "w") as f:
+    f.write(html_content)
+
+# Render HTML to a perfectly professional A4 PDF via WeasyPrint
+HTML("Patel_Vansh_CV.html").write_pdf("Patel_Vansh_CV.pdf")
+print("PDF and HTML elements successfully built.")
